@@ -1,5 +1,5 @@
 {
-  "name": "rollbar-sourcemap-webpack-plugin",
+  "name": "@lets_events/rollbar-sourcemap-webpack-plugin",
   "version": "2.4.0",
   "description": "A Webpack plugin to upload sourcemaps to Rollbar after build",
   "main": "./dist/RollbarSourceMapPlugin.js",
@@ -18,7 +18,7 @@
     "preversion": "npm run -s lint && npm run -s test && npm run -s build",
     "version": "npm run changelog",
     "version:amend": "git commit --amend -m \"Release v${npm_package_version}\"",
-    "postversion": "npm run version:amend && git push origin master --tags && npm publish"
+    "postversion": "npm run version:amend && git push origin master --tags && npm publish --access public"
   },
   "repository": {
     "type": "git",
@@ -39,6 +39,7 @@
   },
   "homepage": "https://github.com/thredup/rollbar-sourcemap-webpack-plugin#readme",
   "license": "MIT",
+  "rollbar-sourcemap-webpack-plugin": "https://github.com/letsevents/rollbar-sourcemap-webpack-plugin/tarball/02b560738c51dc21a90bb4ef1f3c195039618492",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.8.0",
